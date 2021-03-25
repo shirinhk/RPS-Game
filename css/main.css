@@ -1,0 +1,51 @@
+@charset"UTF-8";
+/*CSS Document - this is a comment */
+
+
+/*class*/
+
+.hidden
+{
+    display: none;
+}
+
+h2
+{
+    color: crimson;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.smile
+{
+    color: purple;
+}
+
+.happy
+{
+    font-weight: bolder;
+}
+
+.box-one
+{
+    background-color: #fc6fc6;
+    padding: 20px;
+    /*width:100px;
+    height:100px;*/
+    border:4px solid #393939;
+    margin:35px;
+}
+
+.box-two
+{
+    background-color: #f36f34;
+    padding: 50px;
+    border: 8px solid #876576;
+    margin: 50px;
+    width:100px;
+    height:100px;
+    
+}
+
+
+/*id*/
