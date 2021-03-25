@@ -1,7 +1,5 @@
 from random import randint
 
-from random import randint
-
 from gameComponents import gameVars, winLose
 
 while gameVars.player_choice is False:
