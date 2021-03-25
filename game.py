@@ -6,7 +6,7 @@ while gameVars.player_choice is False:
     print("-_-_-_-_-_-_-_-_-_-_ FUN RPS GAME -_-_-_-_-_-_-_-_-_-_")
     print("Computer Lives:", gameVars.computer_lives, "/", gameVars.total_lives)
     print("Player Lives:", gameVars.player_lives, "/", gameVars.total_lives)
-    print("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_")
+    print("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\")
     print("Choose your weapon! Or type quit to exit\n") #\n means "new line"
     gameVars.player_choice = input("Choose rock, paper, or scissors: \n")
 
@@ -20,27 +20,27 @@ while gameVars.player_choice is False:
     print("computer chose: " + gameVars.computer_choice)
 
     if gameVars.computer_choice == gameVars.player_choice:
-        print("-_-_-_-_-_-_-_-_-_-_-_- tie -_-_-_-_-_-_-_-_-_-_-_-_-_ ")
+        print("-_-_-_-_-_-_-_-_-_-_-_- tie -_-_-_-_-_-_-_-_-_-_-_-_-_ \")
     elif gameVars.computer_choice == "rock":
         if gameVars.player_choice == "scissors":
             gameVars.player_lives -= 1
             print("you lose! player lives:", gameVars.player_lives)
         else:
-            print("-_-_-_-_-_-_-_-_-_-_ you win! -_-_-_-_-_-_-_-_-_-_ ")
+            print("-_-_-_-_-_-_-_-_-_-_ you win! -_-_-_-_-_-_-_-_-_-_ \")
             gameVars.computer_lives -= 1
     elif gameVars.computer_choice == "paper":
         if gameVars.player_choice == "rock":
             gameVars.player_lives -= 1
             print("you lose! player lives:", gameVars.player_lives)
         else:
-            print("-_-_-_-_-_-_-_-_-_-_ you win! -_-_-_-_-_-_-_-_-_-_ ")
+            print("-_-_-_-_-_-_-_-_-_-_ you win! -_-_-_-_-_-_-_-_-_-_ \")
             gameVars.computer_lives -= 1
     elif gameVars.computer_choice == "scissors":
         if gameVars.player_choice == "paper":
             gameVars.player_lives -= 1
             print("you lose! player lives:", gameVars.player_lives)
         else:
-            print("-_-_-_-_-_-_-_-_-_-_ you win! -_-_-_-_-_-_-_-_-_-_ ")
+            print("-_-_-_-_-_-_-_-_-_-_ you win! -_-_-_-_-_-_-_-_-_-_ \")
             gameVars.computer_lives -= 1
 
     if gameVars.player_lives == 0:
