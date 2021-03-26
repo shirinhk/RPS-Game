@@ -10,7 +10,7 @@ while gameVars.player_choice is False:
     print("Choose your weapon! Or type quit to exit\n") #\n means "new line"
     gameVars.player_choice = input("Choose rock, paper, or scissors: \n")
 
-    if gameVars.player_choice == "quit":
+   if gameVars.player_choice == "quit":
         print("---> ---> --->   You chose to quit   <--- <--- <---")
         exit()
 
@@ -44,8 +44,8 @@ while gameVars.player_choice is False:
             gameVars.computer_lives -= 1
 
     if gameVars.player_lives == 0:
-        winLose.winorlose("---> ---> --->  lost  <--- <--- <---")
+        winLose.winorlose("lost")
     elif gameVars.computer_lives == 0:
-        winLose.winorlose("---> ---> --->  won   <--- <--- <---")
+        winLose.winorlose("won")
     else:
         gameVars.player_choice = False
