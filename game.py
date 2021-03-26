@@ -3,7 +3,9 @@ from random import randint
 from gameComponents import gameVars, winLose, compare
 
 while gameVars.player_choice is False:
-    print("-_-_-_-_-_-_-_-_-_-_ FUN RPS GAME -_-_-_-_-_-_-_-_-_-_")
+    print("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_")
+    print("-_-_-_-_-_-_-_-_-_-_   Let's Play   -_-_-_-_-_-_-_-_-_-_")
+    print("-_-_-_-_-_-_-_-_   ROCK PAPER SCISSOR   -_-_-_-_-_-_-_-_\n")
     print("Computer Lives:", gameVars.computer_lives, "/", gameVars.total_lives)
     print("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_\n")
     print("Player Lives:", gameVars.player_lives, "/", gameVars.total_lives)
@@ -12,7 +14,9 @@ while gameVars.player_choice is False:
     gameVars.player_choice = input("Choose rock, paper, or scissors: \n")
 
     if gameVars.player_choice == "quit":
-        print("You chose to quit ")
+        print("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-")
+        print(" oh no!!!!!!  You chose to quit, come back soon :) ")
+        print("-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-")
         exit()
 
     gameVars.computer_choice = gameVars.choices[randint(0, 2)]
