@@ -11,7 +11,7 @@ while gameVars.player_choice is False:
     gameVars.player_choice = input("Choose rock, paper, or scissors: \n")
 
     if gameVars.player_choice == "quit":
-        print("-_-_-_-_-_-_-_-_-_ You chose to quit -_-_-_-_-_-_-_-_")
+        print("---> ---> --->   You chose to quit   <--- <--- <---")
         exit()
 
     gameVars.computer_choice = gameVars.choices[randint(0, 2)]
@@ -44,8 +44,8 @@ while gameVars.player_choice is False:
             gameVars.computer_lives -= 1
 
     if gameVars.player_lives == 0:
-        winLose.winorlose("lost")
+        winLose.winorlose("---> ---> --->  lost  <--- <--- <---")
     elif gameVars.computer_lives == 0:
-        winLose.winorlose("won")
+        winLose.winorlose("---> ---> --->  won   <--- <--- <---")
     else:
         gameVars.player_choice = False
