@@ -10,8 +10,8 @@ while gameVars.player_choice is False:
     print("Choose your weapon! Or type quit to exit\n") #\n means "new line"
     gameVars.player_choice = input("Choose rock, paper, or scissors: \n")
 
-    if gameVars.player_choice == "quit":
-        print("-_-_-_-_-_-_-_-_-_ You chose to quit -_-_-_-_-_-_-_-_")
+   if gameVars.player_choice == "quit":
+        print("---> ---> --->   You chose to quit   <--- <--- <---")
         exit()
 
     gameVars.computer_choice = gameVars.choices[randint(0, 2)]
