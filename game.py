@@ -11,7 +11,7 @@ while gameVars.player_choice is False:
     gameVars.player_choice = input("Choose rock, paper, or scissors: \n")
 
    if gameVars.player_choice == "quit":
-        print("---> ---> --->   You chose to quit   <--- <--- <---")
+        print("You chose to quit")
         exit()
 
     gameVars.computer_choice = gameVars.choices[randint(0, 2)]
