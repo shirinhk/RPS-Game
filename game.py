@@ -1,6 +1,6 @@
 from random import randint
 
-from gameComponents import gameVars, winLose
+from gameComponents import gameVars, winLose, compare
 
 while gameVars.player_choice is False:
     print("-_-_-_-_-_-_-_-_-_-_ FUN RPS GAME -_-_-_-_-_-_-_-_-_-_")
@@ -20,33 +20,12 @@ while gameVars.player_choice is False:
     print("user chose: " + gameVars.player_choice)
     print("computer chose: " + gameVars.computer_choice)
 
-    if gameVars.computer_choice == gameVars.player_choice:
-        print("-_-_-_-_-_-_-_-_-_-_-_ Equal -_-_-_-_-_-_-_-_-_-_-_-_-_\n")
-    elif gameVars.computer_choice == "rock":
-        if gameVars.player_choice == "scissors":
-            gameVars.player_lives -= 1
-            print("you lose! player lives:", gameVars.player_lives)
-        else:
-            print("-_-_-_-_-_-_-_-_-_-_ You win! -_-_-_-_-_-_-_-_-_-_\n ")
-            gameVars.computer_lives -= 1
-    elif gameVars.computer_choice == "paper":
-        if gameVars.player_choice == "rock":
-            gameVars.player_lives -= 1
-            print("you lose! player lives:", gameVars.player_lives)
-        else:
-            print("-_-_-_-_-_-_-_-_-_-_ You win! -_-_-_-_-_-_-_-_-_-_ \n")
-            gameVars.computer_lives -= 1
-    elif gameVars.computer_choice == "scissors":
-        if gameVars.player_choice == "paper":
-            gameVars.player_lives -= 1
-            print("you lose! player lives:", gameVars.player_lives)
-        else:
-            print("-_-_-_-_-_-_-_-_-_-_ You win! -_-_-_-_-_-_-_-_-_-_ \n")
-            gameVars.computer_lives -= 1
+    compare.my_function()
 
     if gameVars.player_lives == 0:
-        winLose.winorlose(" lost ")
+        winLose.winorlose(" ))))))))))): lost :((((((((( ")
     elif gameVars.computer_lives == 0:
-        winLose.winorlose(" won ")
+        winLose.winorlose(" (((((((((((:  won  :)))))))))")
     else:
         gameVars.player_choice = False
+
